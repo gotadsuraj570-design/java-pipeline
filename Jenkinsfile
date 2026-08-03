@@ -2,7 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('clone') {
+            steps {
+               git branch: 'main' 
+            }
+        }
+         stage('Compile') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+         stage('Run') {
             steps {
                 echo 'Hello World'
             }

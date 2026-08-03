@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('clone') {
+        stage('clone') 
             steps {
               git branch: 'main', url: 'https://github.com/gotadsuraj570-design/java-pipeline.git'
             }

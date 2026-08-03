@@ -17,5 +17,4 @@ pipeline {
                 bat 'javac HelloWorld4'
             }
         }
-    }
-
+}

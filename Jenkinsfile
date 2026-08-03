@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-               git branch: 'main' 
+              git branch: 'main', url: 'https://github.com/gotadsuraj570-design/java-pipeline.git'
             }
         }
          stage('Compile') {
             steps {
-                echo 'Hello World'
+              bat 'javac HelloWorld4.java'
             }
         }
          stage('Run') {
             steps {
-                echo 'Hello World'
+                bat 'javac HelloWorld4'
             }
         }
     }
